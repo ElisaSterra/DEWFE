@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Felipe Barbosa">
+    <meta name="description" content="Exemplo de listas em HTML">
+    <meta name="keywords" content="HTML, listas, ordenada, não ordenada, descrição">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>Atividade 2 menu de navegação></title>
+</head>
+<body>
+    <header id="inicio">
+        <nav>
+            <ul>
+                <li><a href="#ListaOrdenada">Lista Ordenada</a></li>
+                <li><a href="#ListaNaoOrdenada">Lista Não Ordenada</a></li>
+                <li><a href="#TiposListaOrdenada">Diferentes tipos de listas ordenadas</a></li>
+                <li><a href="#TiposListaNaoOrdenada">Diferentes tipos de listas não ordenadas</a></li>
+                <li><a href="#ListaDescricao">Lista de Descrição</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Listas</h1>
+        <section id="ListaOrdenada">
+            <h2>Lista Ordenada</h2>
+
+            <ol>
+                <li>Abacaxi</li>
+                <li>Limão</li>
+                <li>Laranja
+                    <ol>
+                        <li>Pera</li>
+                        <li>Bahia</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+        <!-- Isso é feio, nunca use... Vamos aprender o jeito certo de pular linhas com CSS -->
+        <br><br><br><br><br><br><br><br><br><br>
+       
+        <section id="ListaNaoOrdenada">
+            <h2>Lista Não Ordenada</h2>
+            <ul>
+                <li>Abacaxi</li>
+                <li>Limão</li>
+                <li>Laranja
+                    <ul>
+                        <li>Pera</li>
+                        <li>Bahia</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <section id="TiposListaOrdenada">
+            <h2>Diferentes tipos de listas ordenadas</h2>
+            <ol type="A">
+                <li>Morango</li>
+                <li>Maçã
+                    <ol type="i">
+                        <li>Vermelha</li>
+                        <li>Verde</li>
+                    </ol>
+                </li>
+                <li>Cereja</li>
+            </ol>
+        </section>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <section id="TiposListaNaoOrdenada">
+        <h2>Diferentes tipos de listas não ordenadas</h2>
+            <ul type="circle">
+                <li>Morango</li>
+                <li>Maçã
+                    <ul type="square">
+                        <li>Vermelha</li>
+                        <li>Verde</li>
+                    </ul>
+                </li>
+                <li>Cereja</li>
+            </ul>
+        </section>
+
+        <br><br><br><br><br><br><br><br><br><br>
+       
+        <section id="ListaDescricao">
+            <h2>Lista de Descrição</h2>
+            <dl>
+                <dt>Abacaxi</dt>
+                    <dd>Fruta ácida de tom amarelado e casca dura.</dd>
+                <dt>Limão</dt>
+                    <dd>Fruta ácida e azeda de tom verde.</dd>
+                <dt>Laranja</dt>
+                    <dd>Fruta ácida de cor laranja e doce.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <p><b><a href="#inicio">voltar</a></b></p>
+        </section>
+    </main>
+</body>
+</html>
