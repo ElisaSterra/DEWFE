@@ -21,8 +21,6 @@ body{
     flex-direction:column;
 }
 
-/* HEADER */
-
 header{
     height:var(--altura-header);
 
@@ -65,8 +63,6 @@ header{
     font-style:italic;
 }
 
-/* MENU */
-
 nav ul{
     list-style:none;
     display:flex;
@@ -85,16 +81,12 @@ nav a:hover{
     transform:scale(1.5);
 }
 
-/* MAIN */
-
 main{
     flex:1;
     width:90%;
     max-width:1100px;
     margin:25px auto;
 }
-
-/* TOPO HOME */
 
 #header-main{
     text-align:center;
@@ -111,8 +103,6 @@ main{
     color:#666;
     font-style:italic;
 }
-
-/* EVENTOS */
 
 #proximos-eventos{
     background:#e5e5e5;
@@ -140,26 +130,18 @@ main{
 
 .evento{
     background:white;
-
     border:1px solid #f0b040;
-
     border-radius:8px;
-
     display:flex;
-
     padding:10px;
-
     margin-bottom:15px;
-
     transition:.3s ease;
 }
 
 .evento:hover{
     background:var(--cor-laranja);
     color:white;
-
     transform:translateY(-5px);
-
     box-shadow:0 4px 12px rgba(0,0,0,.3);
 }
 
@@ -171,15 +153,12 @@ main{
 .evento img{
     width:120px;
     height:90px;
-
     border-radius:6px;
-
     object-fit:cover;
 }
 
 .dados-evento{
     padding-left:15px;
-
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -195,33 +174,23 @@ main{
     font-size:.9rem;
 }
 
-/* SEÇÕES CONTATO E CADASTRO */
-
 section{
     background:white;
-
     padding:25px;
-
     border-radius:8px;
-
     margin-bottom:20px;
-
     box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
 section h2{
     text-align:center;
-
     color:var(--cor-laranja);
-
     margin-bottom:20px;
 }
 
 section p{
     margin-bottom:10px;
 }
-
-/* FORMULÁRIOS */
 
 form{
     display:flex;
@@ -236,9 +205,7 @@ label{
 input,
 textarea{
     padding:10px;
-
     border:1px solid #ccc;
-
     border-radius:5px;
 }
 
@@ -251,15 +218,10 @@ textarea:focus{
 
 button{
     padding:10px;
-
     border:none;
-
     border-radius:5px;
-
     color:white;
-
     cursor:pointer;
-
     transition:.3s;
 }
 
@@ -281,19 +243,12 @@ button[type="reset"]:hover{
     transform:scale(1.01);
 }
 
-/* FOOTER */
-
 footer{
     background:var(--cor-footer);
-
     color:white;
-
     text-align:center;
-
     padding:20px;
 }
-
-/* RESPONSIVO */
 
 @media(max-width:768px){
 
