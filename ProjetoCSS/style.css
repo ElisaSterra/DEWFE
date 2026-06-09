@@ -1,0 +1,324 @@
+:root{
+    --altura-header:20vh;
+    --cor-laranja:#f4a000;
+    --cor-fundo:#eeeeee;
+    --cor-footer:#162331;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--cor-fundo);
+    color:#333;
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* HEADER */
+
+header{
+    height:var(--altura-header);
+
+    background:linear-gradient(
+        90deg,
+        #e8e4d6 0%,
+        #e8e4d6 65%,
+        var(--cor-laranja) 100%
+    );
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+}
+
+#logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+#logo-img{
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    transition:transform 1s ease;
+}
+
+#logo-img:hover{
+    transform:rotate(360deg);
+}
+
+#logo h1{
+    color:#24303d;
+    font-size:2.3rem;
+    font-style:italic;
+}
+
+/* MENU */
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+
+    transition:transform .5s ease;
+}
+
+nav a:hover{
+    transform:scale(1.5);
+}
+
+/* MAIN */
+
+main{
+    flex:1;
+    width:90%;
+    max-width:1100px;
+    margin:25px auto;
+}
+
+/* TOPO HOME */
+
+#header-main{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+#header-main h2{
+    font-size:3.5rem;
+    color:#24303d;
+    margin-bottom:10px;
+}
+
+#header-main p{
+    color:#666;
+    font-style:italic;
+}
+
+/* EVENTOS */
+
+#proximos-eventos{
+    background:#e5e5e5;
+
+    padding:30px;
+
+    border-radius:8px;
+}
+
+#proximos-eventos h3{
+    text-align:center;
+
+    color:var(--cor-laranja);
+
+    font-size:2.8rem;
+
+    margin-bottom:10px;
+}
+
+#proximos-eventos > p{
+    text-align:center;
+    margin-bottom:20px;
+    color:#666;
+}
+
+.evento{
+    background:white;
+
+    border:1px solid #f0b040;
+
+    border-radius:8px;
+
+    display:flex;
+
+    padding:10px;
+
+    margin-bottom:15px;
+
+    transition:.3s ease;
+}
+
+.evento:hover{
+    background:var(--cor-laranja);
+    color:white;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+
+.evento:hover .data,
+.evento:hover .local{
+    color:white;
+}
+
+.evento img{
+    width:120px;
+    height:90px;
+
+    border-radius:6px;
+
+    object-fit:cover;
+}
+
+.dados-evento{
+    padding-left:15px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.dados-evento h4{
+    margin-bottom:8px;
+}
+
+.data,
+.local{
+    color:#666;
+    font-size:.9rem;
+}
+
+/* SEÇÕES CONTATO E CADASTRO */
+
+section{
+    background:white;
+
+    padding:25px;
+
+    border-radius:8px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+section h2{
+    text-align:center;
+
+    color:var(--cor-laranja);
+
+    margin-bottom:20px;
+}
+
+section p{
+    margin-bottom:10px;
+}
+
+/* FORMULÁRIOS */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input,
+textarea{
+    padding:10px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:orange;
+    box-shadow:0 0 5px rgba(255,165,0,.5);
+}
+
+button{
+    padding:10px;
+
+    border:none;
+
+    border-radius:5px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button[type="submit"]{
+    background:#2f80ed;
+}
+
+button[type="submit"]:hover{
+    background:yellowgreen;
+    transform:scale(1.01);
+}
+
+button[type="reset"]{
+    background:#666;
+}
+
+button[type="reset"]:hover{
+    background:orange;
+    transform:scale(1.01);
+}
+
+/* FOOTER */
+
+footer{
+    background:var(--cor-footer);
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    #header-main h2{
+        font-size:2rem;
+    }
+
+    .evento{
+        flex-direction:column;
+    }
+
+    .evento img{
+        width:100%;
+        height:200px;
+    }
+}
